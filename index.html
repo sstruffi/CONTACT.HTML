@@ -7,17 +7,30 @@
     <style>
       nav ul { list-style: none; }
       nav ul li { display: inline; margin-right: 20px; }
-      nav a { text-decoration: none; font-family: Arial; font-size: 18px; color: #d14f9c; padding: 6px 10px;}
-      nav a:hover {color: #ffb6db;}
+      nav a {
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        color: #d14f9c;
+        padding: 6px 10px;
+      }
+
+      nav a:hover { color: #ffb6db; }
       nav a:active { color: #aa2f79; }
       nav a:visited { color: #c6428f; }
-      { box-sizing: border-box; margin: 0; padding: 0;}
+      
+      { box-sizing: border-box; margin: 0; padding: 0; }
       .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+      
+      .contact-section {
+          margin-top: 100px;
+      }
       
       input, textarea {
         display: block;
-        width: 400px;
+        width: 800px;
         padding: 10px;
+        height: 200px;
         margin-bottom: 20px;
         font-size: 16px;
       }
@@ -45,6 +58,7 @@
         </ul>
       </nav>
       
+      <div class="contact-section">
       <h1>Contact Me</h1>
       <form action="mailto:sarastruffi@gmail.com" method="POST">
         <imput type="text" name="name" placeholder="Your Name">  <imput type="email" name="email" placeholder="Your Email">
